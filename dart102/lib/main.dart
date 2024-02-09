@@ -26,4 +26,11 @@ void main() {
   istediğini yazabilirsin
   ''';
   print(text3);
+
+  bool isBiggerThanZero = number_int > 0; //number_int değeri 0 dan büyükse true
+  print(isBiggerThanZero);
+
+  String? user_name;
+  user_name = "berke";
+  print(user_name);
 }

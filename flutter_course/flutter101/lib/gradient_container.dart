@@ -1,16 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:flutter101/text_widget.dart';
 
 const startAlignment = Alignment.topLeft;
 const endAlignment = Alignment.bottomRight;
 
-class GradientContainer extends StatelessWidget {
-  const GradientContainer(this.colors, {super.key});
+class GradientContainer extends StatefulWidget {
+  GradientContainer(this.colors, {super.key});
 
   final List<Color> colors;
 
+  var activeDiceImage = 'assets/images/dice-2.png';
+
   void rollDice() {
-    // butonumuz icin fonksiyon yarattık
+    activeDiceImage = 'assets/images/dice-4.png';
+    print('changing image...'); //bunu kodumuz calisiyor mu test ediyoruz
   }
 
   @override
@@ -28,7 +30,7 @@ class GradientContainer extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           children: [
             Image.asset(
-              'assets/images/dice-1.png',
+              activeDiceImage,
               width: 200,
             ),
             //'SizedBox' alt widget eklemek için ya da bosluk bırakmak icin kullanıyoruz

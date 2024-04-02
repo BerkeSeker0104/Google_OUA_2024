@@ -28,9 +28,10 @@ class StartScreen extends StatelessWidget {
             const SizedBox(
               height: 100,
             ),
-            FilledButton(
+            FilledButton.icon(
               onPressed: () {},
-              child: const Text('Start Quiz'),
+              icon: const Icon(Icons.arrow_right_alt),
+              label: const Text('Start Quiz'),
             ),
           ],
         ),
